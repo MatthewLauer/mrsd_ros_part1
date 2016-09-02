@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<launch>
+  
+  <!-- Start the turtle sim node -->
+  <node name="TurtleSim" pkg="turtlesim" type = "turtlesim_node" output="screen" />
+
+  <!-- Start the drawing script -->
+  <node name="DrawSmiley" pkg="mrsd_ros_part1" type = "drawSmiley.py" output="screen" />
+
+</launch>
