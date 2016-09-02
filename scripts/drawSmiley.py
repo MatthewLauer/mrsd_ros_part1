@@ -34,6 +34,7 @@ def run():
   
   # Initialize node
   rospy.init_node('DrawSmiley')
+  rospy.wait_for_service('spawn')
 
   # Handle for calling Spawn service
   spawnService = rospy.ServiceProxy('spawn', Spawn)
